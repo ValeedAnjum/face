@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e9ebee;
+}
+
+.sec-navbar {
+  background-color: #4267b2;
+}
+.sec-navbar .navbar {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+}
+.sec-navbar .flex-item {
+  min-height: 30px;
+  max-height: 30px;
+}
+.sec-navbar .icon {
+  width: 30px;
+  position: relative;
+  margin-right: 10px;
+}
+.sec-navbar .icon i {
+  position: absolute;
+  top: -2px;
+  font-size: 2em;
+  color: white;
+}
+.sec-navbar .search-bar {
+  display: flex;
+  flex-grow: 0.5;
+}
+.sec-navbar .search-bar input {
+  outline: none;
+  border: none;
+  padding-left: 5px;
+  flex-grow: 2;
+}
+.sec-navbar .search-bar .search-icon-button {
+  background-color: #f5f6f7;
+  padding: 0 10px;
+  border: 1px solid #f5f6f7;
+  border-radius: 0 2px 2px 0;
+}
+.sec-navbar .tabs {
+  flex-grow: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+.sec-navbar .tab-container {
+  width: 80%;
+  display: flex;
+}
+.sec-navbar .tab-container .user-icon {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background: url("/style/images/user.jpg") no-repeat;
+  background-size: cover;
+  margin-right: 5px;
+}
+.sec-navbar .tab-container .ul {
+  display: flex;
+  align-items: center;
+}
+.sec-navbar .tab-container .ul .tab:nth-of-type(1) {
+  display: flex;
+}
+.sec-navbar .tab-container .ul .tab {
+  text-transform: capitalize;
+  padding: 4px 10px;
+  position: relative;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.sec-navbar .tab-container .ul .tab .line {
+  position: absolute;
+  width: 1px;
+  top: 0;
+  right: 0;
+  height: 50%;
+  transform: translateY(50%);
+  border-right: 1px solid #0000003b;
+}
+.sec-navbar .tab-container .ul .tab:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.sec-navbar .tab-container .ul .fab,
+.sec-navbar .tab-container .ul .fas {
+  color: #1a2947;
+  font-size: large;
+}
+.sec-navbar .tab-container .ul .notification {
+  position: relative;
+}
+.sec-navbar .tab-container .ul .notification-counter {
+  position: absolute;
+  width: 11px;
+  height: 15px;
+  background-color: red;
+  top: 0;
+  right: 0;
+  transform: translate(-36%, 12%);
+  border-radius: 3px;
+  font-size: 10px;
+  padding-left: 2px;
+}
+.sec-navbar .tab-container .ul .notification-dropdown {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid rgba(100, 100, 100, 0.4);
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  color: #1d2129;
+  display: block;
+  left: 50%;
+  top: 122%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 500px;
+  user-select: none;
+  overflow: auto;
+  cursor: default;
+}
+.sec-navbar .tab-container .ul .notification-dropdown .notification-header {
+  white-space: nowrap;
+  padding: 5px;
+  font-size: x-small;
+  cursor: default;
+  border-bottom: solid 1px #dddfe2;
+}
+.sec-navbar .tab-container .ul .notification-dropdown .notification-header span:nth-child(1) {
+  color: black;
+}
+.sec-navbar .tab-container .ul .notification-dropdown .notification-header span:nth-child(2) {
+  color: #6484ec;
+  float: right;
+  margin-left: 5px;
+}
+.sec-navbar .tab-container .ul .notification-dropdown .notification-header span:nth-child(2):hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.sec-navbar .tab-container .ul .notification-dropdown .notification-header span:nth-child(3):hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.sec-navbar .tab-container .ul .notification-dropdown .notification-header span:nth-child(3) {
+  color: #6484ec;
+  float: right;
+}
+.sec-navbar .tab-container .ul .notification-dropdown::-webkit-scrollbar {
+  width: 10px;
+  height: 50px !important;
+}
+.sec-navbar .tab-container .ul .notification-dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+.sec-navbar .tab-container .ul .notification-dropdown::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.555);
+  border-radius: 5px;
+}
+.sec-navbar .tab-container .ul .notification-dropdown::-webkit-scrollbar-thumb:hover {
+  background: rgba(136, 136, 136, 0.747);
+}
+.sec-navbar .tab-container .ul .notification:hover .notification-dropdown {
+  display: block;
+}
+.sec-navbar .tab-container .ul .notification-heading-text {
+  text-transform: uppercase;
+  background-color: #f5f6f7;
+  color: #a7aab1;
+  margin: 0;
+  padding: 5px;
+  border-bottom: solid 1px #dddfe2;
+  cursor: default;
+}
+.sec-navbar .tab-container .ul .single-notification {
+  padding: 5px;
+  background-color: #edf2fa;
+  border-bottom: solid 1px #dddfe2;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.sec-navbar .tab-container .ul .notifictaion-user-image {
+  display: block;
+  height: 48px;
+  margin-right: 12px;
+  width: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.sec-navbar .tab-container .ul .notifictaion-user-image img {
+  width: 100%;
+  height: 100%;
+}
+.sec-navbar .tab-container .ul .single-notification .notification-text p {
+  font-size: smaller;
+  color: #1d2129;
+  width: 45ch;
+  overflow: hidden;
+}
+.sec-navbar .tab-container .ul .single-notification .notification-text span:nth-child(1) {
+  font-weight: 500;
+}
+.sec-navbar .tab-container .ul .single-notification .notification-text span:nth-child(2) {
+  font-weight: 500;
+}
+.sec-navbar .tab-container .ul .single-notification:hover {
+  background-color: #e4e9f1;
+}
+
+/*# sourceMappingURL=style.css.map */
