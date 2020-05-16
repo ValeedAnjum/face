@@ -279,28 +279,140 @@ body {
                         text-decoration: underline;
                     }
                 }
+                //friend-request header
+                .friend-requests-header {
+                    white-space: nowrap;
+                    padding: 5px;
+                    font-size: x-small;
+                    cursor: default;
+                    border-bottom: solid 1px #dddfe2;
+                    span {
+                        font-size: 12px;
+                    }
+                    span:nth-child(1) {
+                        color: #5b5e64;
+                        font-weight: bold;
+                    }
+                    span:nth-child(2) {
+                        float: right;
+                        margin-left: 5px;
+                        color: #6484ec;
+                    }
+                    span:nth-child(2):hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                    span:nth-child(3) {
+                        float: right;
+                        color: #6484ec;
+                    }
+                    span:nth-child(3):hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+                //friend request footer
+                .friend-request-footer {
+                    position: absolute;
+                    bottom: 0;
+                    background-color: white;
+                    width: 100%;
+                    text-align: center;
+                    p {
+                        margin: 0;
+                        cursor: pointer;
+                        border-bottom: solid 1px #dddfe2;
+                        color: #6484ec;
+                    }
+                    p:hover {
+                        text-decoration: underline;
+                    }
+                }
+                //friend-request-container
+                .friend-request-container {
+                    height: 89%;
+                    overflow: auto;
+                    .single-friend-request {
+                        display: flex;
+                        padding: 5px;
+                        border-bottom: 1px solid #dddfe2;
+                        .user-image {
+                            width: 48px;
+                            height: 48px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            margin-right: 12px;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .button-container {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            button {
+                                border: none;
+                            }
+                            
+                            button:nth-child(1) {
+                                margin-right: 5px;
+                                background-color: #4267b2;
+                                color: #ffffff;
+                                outline: none;
+                                padding: 2px 5px;
+                                border-radius: 2px;
+                            }
+                            button:nth-child(2) {
+                                background-color: #f5f6f7;
+                                color: #4b4f56;
+                                outline: none;
+                                padding: 2px 5px;
+                                border-radius: 2px;
+                                border: 1px solid #dddfe2;
+                            }
+                            button:nth-child(1):hover {
+                                background-color: #4267b2db;
+                            }
+                            button:nth-child(2):hover{
+                                background-color: #343a4029;
+                            }
+                        }
+                    }
+                }
 
             }
-            //scrollbar styling
-            .dropdown::-webkit-scrollbar {
+            //scrollbar styling dropdown and friend-request-container
+            .dropdown::-webkit-scrollbar,
+            .friend-request-container::-webkit-scrollbar {
                 width: 10px;
                 height: 50px !important;
             }
-            .dropdown::-webkit-scrollbar-track {
+            .dropdown::-webkit-scrollbar-track,
+            .friend-request-container::-webkit-scrollbar-track {
                 background: transparent;
             }
-            .dropdown::-webkit-scrollbar-thumb {
+            .dropdown::-webkit-scrollbar-thumb,
+            .friend-request-container::-webkit-scrollbar-thumb {
                 background: rgba(136, 136, 136, 0.555);
                 border-radius: 5px;
             }
-            .dropdown::-webkit-scrollbar-thumb:hover {
+            .dropdown::-webkit-scrollbar-thumb:hover,
+            .friend-request-container::-webkit-scrollbar-thumb:hover {
                 background: rgba(136, 136, 136, 0.747);
             }
-            //temporary displaying message dropdown
+
+            //overflow hidden
             .messages > .dropdown {
                 overflow: hidden;
             }
-            //temporary displaying message dropdown
+            //overflow hidden
+            //temporary displaying block friend-request dropdown
+            .friend-requests > .dropdown {
+                // display: block;
+                overflow: hidden;
+            }
+            //temporary displaying block friend-request dropdown
+            .friend-requests:hover .dropdown,
             .messages:hover .dropdown,
             .notification:hover .dropdown {
                 display: block;
