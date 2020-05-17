@@ -13,7 +13,7 @@ body {
 }
 .sec-navbar .navbar {
   margin: auto;
-  width: 90%;
+  width: 80%;
   display: flex;
   justify-content: flex-start;
 }
@@ -91,6 +91,9 @@ body {
 }
 .sec-navbar .tab-container .ul .tab:hover {
   background-color: rgba(0, 0, 0, 0.1);
+}
+.sec-navbar .tab-container .ul .tab:hover i {
+  color: white;
 }
 .sec-navbar .tab-container .ul .fab,
 .sec-navbar .tab-container .ul .fas {
@@ -436,6 +439,56 @@ body {
 }
 .sec-navbar .tab-container .ul .single-notification:hover {
   background-color: #e4e9f1;
+}
+
+.main .user-navbar-posts {
+  padding: 10px;
+}
+.main .user-navbar {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0.1;
+  padding: 5px;
+  width: 20%;
+  margin-left: 11%;
+  position: fixed;
+}
+.main .user-navbar .user-itself {
+  display: flex;
+}
+.main .user-navbar .user-itself img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.main .user-navbar .user-itself p {
+  margin: 0;
+}
+.main .user-navbar .others {
+  margin-top: 10px;
+}
+.main .user-navbar .others div.active,
+.main .user-navbar .user-tab:hover {
+  font-weight: 500;
+  background-color: #f5f6f7;
+  border: 1px solid #dddfe2;
+  cursor: pointer;
+}
+.main .user-navbar .others > div {
+  padding: 0 5px;
+  color: #1d2129;
+  border: 1px solid transparent;
+}
+.main .user-navbar .others > div i {
+  margin-right: 19px;
+  color: #00a3ff;
+  border-radius: 2px;
+}
+.main .user-posts {
+  width: 30%;
+  border: 1px solid;
+  margin-left: 32%;
 }
 
 /*# sourceMappingURL=style.css.map */

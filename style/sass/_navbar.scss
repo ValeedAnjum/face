@@ -11,7 +11,7 @@ body {
     background-color: #4267b2;
     .navbar {
         margin: auto;
-        width: 90%;
+        width: 80%;
         // border: 1px solid #000;
         display: flex;
         justify-content: flex-start;
@@ -90,8 +90,10 @@ body {
                 }
             }
             .tab:hover {
-                // background-color: rgba(82, 79, 79, 0.185);
                 background-color: rgba(0, 0, 0, 0.1);
+                i {
+                    color: white;
+                }
             }
             .fab,
             .fas {
