@@ -1,6 +1,7 @@
 .main {
     .user-navbar-posts {
         padding: 10px;
+        margin-top: 50px;
     }
     .user-navbar {
         display: flex;
@@ -10,6 +11,9 @@
         width: 20%;
         margin-left: 11%;
         position: fixed;
+        .user-tab {
+            position: relative;
+        }
         .user-itself {
             display: flex;
             img {
@@ -24,10 +28,45 @@
         }
         .others {
             margin-top: 10px;
+            .shortcuts {
+                margin-top: 10px;
+                font-weight: 500;
+                color: #70767e;
+            }
+            .shortcut {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                i {
+                    margin-right: 5px;
+                    color: #8f949d;
+                }
+            }
         }
-        .others div.active,
-        .user-tab:hover {
+        .others div.active {
             font-weight: 500;
+            background-color: #f5f6f7;
+            border: 1px solid #dddfe2;
+            cursor: pointer;
+            .dots {
+                position: absolute;
+                border: none;
+                top: 50%;
+                right: 30px;
+                transform: translateY(-50%);
+                padding: 2px;
+                border-radius: 50%;
+                background-color: #90949c;
+            }
+            .dot-2 {
+                right: 38px;
+            }
+            .dot-3 {
+                right: 22px;
+            }
+        }
+        .shortcut:hover,
+        .user-tab:hover {
             background-color: #f5f6f7;
             border: 1px solid #dddfe2;
             cursor: pointer;
@@ -45,8 +84,239 @@
 
     }
     .user-posts {
-        width: 30%;
-        border: 1px solid;
+        width: 45%;
         margin-left: 32%;
+        .create-post {
+            border: 1px solid #dddfe2;
+            border-radius: 2px;
+            background-color: white;
+
+            h4 {
+                font-size: 15px;
+                padding: 5px;
+                margin: 0;
+                border-bottom: 1px solid #dddfe2;
+                background-color: #f5f6f7;
+            }
+            .user-image-and-content {
+                display: flex;
+                padding: 10px;
+                justify-content: flex-start;
+
+                img {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+                input {
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                }
+            }
+            .upload-content {
+                margin: 10px;
+                border-top: 1px solid #dddfe2;
+                padding: 5px;
+                display: flex;
+                button {
+                    border: none;
+                    outline: none;
+                    padding: 5px 20px;
+                    border-radius: 28px;
+                }
+                .upload-picture {
+                    margin-right: 10px;
+                }
+            }
+            .post-button-container {
+                padding: 10px;
+                button {
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    background-color: #4267b2;
+                    color: white;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+    .online-user {
+        position: fixed;
+        top: 46px;
+        right: 0;
+        width: 20%;
+        height: 100%;
+        border-left: 1px solid #dddfe2;
+        .list-of-users {
+            .single-user {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 5px;
+                img {
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    margin-right: 5px;
+                }
+                span {
+                    font-size: small;
+                    color: #a7aab1;
+                }
+                .online {
+                    border: none;
+                    border-radius: 50%;
+                    padding: 3px;
+                    position: absolute;
+                    right: 5px;
+                    background-color: #42b72a;
+                }
+            }
+            .single-user:hover {
+                background-color: rgba(0,0,0,0.1);
+                cursor: pointer;
+            }
+        }
+    }
+    .posts-container {
+        background-color: white;
+        margin-top: 10px;
+        .post {
+            .user-data {
+                display: flex;
+                position: relative;
+                padding: 10px;
+                .user-image {
+                    width: 50px;
+                    height: 50px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+                }
+                .name-and-time {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 5px;
+                    span:nth-child(1) {
+                        color: #385898;
+                        font-weight: 700;
+                    }
+                    span:nth-child(2) {
+                        word-spacing: -2px;
+                        font-size: smaller;
+                        color: #616786;
+                    }
+                }
+                .three-dots {
+                    display: flex;
+                    position: absolute;
+                    right: 10px;
+                    top: 30%;
+                    cursor: pointer;
+                    .dot-1 {
+                        padding: 3px;
+                        border-radius: 50%;
+                        background-color: #606770;
+                        margin-right: 3px;
+                    }
+                    .dot-2 {
+                        padding: 3px;
+                        border-radius: 50%;
+                        background-color: #606770;
+                        margin-right: 3px;
+                    }
+                    .dot-3 {
+                        padding: 3px;
+                        border-radius: 50%;
+                        background-color: #606770;
+                    }
+                    .options-container {
+                        border: 1px solid green;
+                        width: max-content;
+                        position: absolute;
+                        top: 101%;
+                        right: 0;
+                        margin-top: 3px;
+                        background-color: white;
+                        padding: 10px 0;
+                        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+                        border: 1px solid rgba(100, 100, 100, 0.4);
+                        border-radius: 2px;
+                        display: none;
+                        .option {
+                            display: flex;
+                            align-items: flex-start;
+                            padding: 0 10px;
+                            .option-icon {
+                                margin-right: 5px;
+                            }
+                            .option-name-and-description {
+                                display: flex;
+                                flex-direction: column;
+                                .name {
+                                    font-weight: 700;
+                                    color: #1d2129;
+                                }
+                                .description {
+                                    font-size: x-small;
+                                    color: #1d2129;
+                                }
+                            }
+                        }
+                        .option:hover {
+                            background-color: #4267b2;
+                            cursor: pointer;
+                            .option-icon {
+                                color: white;
+                            }
+                            .option-name-and-description {
+                                .name {
+                                    color: white;
+                                }
+                                .description {
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+                .three-dots:hover .options-container {
+                    display: block;
+                }
+            }
+            .user-content {
+                img,
+                video {
+                    width: 100%;
+                }
+            }
+            .post-buttons {
+                padding: 10px;
+                .button-container {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    border-top: 1px solid #ced0d4;
+                    padding: 10px 0;
+                    border-bottom: 1px solid #ced0d4;
+                    button {
+                        flex-grow: 1;
+                        border: none;
+                        outline: none;
+                        background-color: transparent;
+                        border-radius: 5px;
+                        padding: 5px;
+                    }
+                    button:hover {
+                        background-color: #f0f0f0;
+                    }
+                }
+            }
+        }
     }
 }

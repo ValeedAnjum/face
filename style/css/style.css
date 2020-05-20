@@ -10,6 +10,9 @@ body {
 
 .sec-navbar {
   background-color: #4267b2;
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
 .sec-navbar .navbar {
   margin: auto;
@@ -443,6 +446,7 @@ body {
 
 .main .user-navbar-posts {
   padding: 10px;
+  margin-top: 50px;
 }
 .main .user-navbar {
   display: flex;
@@ -452,6 +456,9 @@ body {
   width: 20%;
   margin-left: 11%;
   position: fixed;
+}
+.main .user-navbar .user-tab {
+  position: relative;
 }
 .main .user-navbar .user-itself {
   display: flex;
@@ -468,9 +475,44 @@ body {
 .main .user-navbar .others {
   margin-top: 10px;
 }
-.main .user-navbar .others div.active,
-.main .user-navbar .user-tab:hover {
+.main .user-navbar .others .shortcuts {
+  margin-top: 10px;
   font-weight: 500;
+  color: #70767e;
+}
+.main .user-navbar .others .shortcut {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main .user-navbar .others .shortcut i {
+  margin-right: 5px;
+  color: #8f949d;
+}
+.main .user-navbar .others div.active {
+  font-weight: 500;
+  background-color: #f5f6f7;
+  border: 1px solid #dddfe2;
+  cursor: pointer;
+}
+.main .user-navbar .others div.active .dots {
+  position: absolute;
+  border: none;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  padding: 2px;
+  border-radius: 50%;
+  background-color: #90949c;
+}
+.main .user-navbar .others div.active .dot-2 {
+  right: 38px;
+}
+.main .user-navbar .others div.active .dot-3 {
+  right: 22px;
+}
+.main .user-navbar .shortcut:hover,
+.main .user-navbar .user-tab:hover {
   background-color: #f5f6f7;
   border: 1px solid #dddfe2;
   cursor: pointer;
@@ -486,9 +528,230 @@ body {
   border-radius: 2px;
 }
 .main .user-posts {
-  width: 30%;
-  border: 1px solid;
+  width: 45%;
   margin-left: 32%;
+}
+.main .user-posts .create-post {
+  border: 1px solid #dddfe2;
+  border-radius: 2px;
+  background-color: white;
+}
+.main .user-posts .create-post h4 {
+  font-size: 15px;
+  padding: 5px;
+  margin: 0;
+  border-bottom: 1px solid #dddfe2;
+  background-color: #f5f6f7;
+}
+.main .user-posts .create-post .user-image-and-content {
+  display: flex;
+  padding: 10px;
+  justify-content: flex-start;
+}
+.main .user-posts .create-post .user-image-and-content img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.main .user-posts .create-post .user-image-and-content input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.main .user-posts .create-post .upload-content {
+  margin: 10px;
+  border-top: 1px solid #dddfe2;
+  padding: 5px;
+  display: flex;
+}
+.main .user-posts .create-post .upload-content button {
+  border: none;
+  outline: none;
+  padding: 5px 20px;
+  border-radius: 28px;
+}
+.main .user-posts .create-post .upload-content .upload-picture {
+  margin-right: 10px;
+}
+.main .user-posts .create-post .post-button-container {
+  padding: 10px;
+}
+.main .user-posts .create-post .post-button-container button {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #4267b2;
+  color: white;
+  border-radius: 2px;
+}
+.main .online-user {
+  position: fixed;
+  top: 46px;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  border-left: 1px solid #dddfe2;
+}
+.main .online-user .list-of-users .single-user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+}
+.main .online-user .list-of-users .single-user img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.main .online-user .list-of-users .single-user span {
+  font-size: small;
+  color: #a7aab1;
+}
+.main .online-user .list-of-users .single-user .online {
+  border: none;
+  border-radius: 50%;
+  padding: 3px;
+  position: absolute;
+  right: 5px;
+  background-color: #42b72a;
+}
+.main .online-user .list-of-users .single-user:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.main .posts-container {
+  background-color: white;
+  margin-top: 10px;
+}
+.main .posts-container .post .user-data {
+  display: flex;
+  position: relative;
+  padding: 10px;
+}
+.main .posts-container .post .user-data .user-image {
+  width: 50px;
+  height: 50px;
+}
+.main .posts-container .post .user-data .user-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.main .posts-container .post .user-data .name-and-time {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.main .posts-container .post .user-data .name-and-time span:nth-child(1) {
+  color: #385898;
+  font-weight: 700;
+}
+.main .posts-container .post .user-data .name-and-time span:nth-child(2) {
+  word-spacing: -2px;
+  font-size: smaller;
+  color: #616786;
+}
+.main .posts-container .post .user-data .three-dots {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 30%;
+  cursor: pointer;
+}
+.main .posts-container .post .user-data .three-dots .dot-1 {
+  padding: 3px;
+  border-radius: 50%;
+  background-color: #606770;
+  margin-right: 3px;
+}
+.main .posts-container .post .user-data .three-dots .dot-2 {
+  padding: 3px;
+  border-radius: 50%;
+  background-color: #606770;
+  margin-right: 3px;
+}
+.main .posts-container .post .user-data .three-dots .dot-3 {
+  padding: 3px;
+  border-radius: 50%;
+  background-color: #606770;
+}
+.main .posts-container .post .user-data .three-dots .options-container {
+  border: 1px solid green;
+  width: max-content;
+  position: absolute;
+  top: 101%;
+  right: 0;
+  margin-top: 3px;
+  background-color: white;
+  padding: 10px 0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(100, 100, 100, 0.4);
+  border-radius: 2px;
+  display: none;
+}
+.main .posts-container .post .user-data .three-dots .options-container .option {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 10px;
+}
+.main .posts-container .post .user-data .three-dots .options-container .option .option-icon {
+  margin-right: 5px;
+}
+.main .posts-container .post .user-data .three-dots .options-container .option .option-name-and-description {
+  display: flex;
+  flex-direction: column;
+}
+.main .posts-container .post .user-data .three-dots .options-container .option .option-name-and-description .name {
+  font-weight: 700;
+  color: #1d2129;
+}
+.main .posts-container .post .user-data .three-dots .options-container .option .option-name-and-description .description {
+  font-size: x-small;
+  color: #1d2129;
+}
+.main .posts-container .post .user-data .three-dots .options-container .option:hover {
+  background-color: #4267b2;
+  cursor: pointer;
+}
+.main .posts-container .post .user-data .three-dots .options-container .option:hover .option-icon {
+  color: white;
+}
+.main .posts-container .post .user-data .three-dots .options-container .option:hover .option-name-and-description .name {
+  color: white;
+}
+.main .posts-container .post .user-data .three-dots .options-container .option:hover .option-name-and-description .description {
+  color: white;
+}
+.main .posts-container .post .user-data .three-dots:hover .options-container {
+  display: block;
+}
+.main .posts-container .post .user-content img,
+.main .posts-container .post .user-content video {
+  width: 100%;
+}
+.main .posts-container .post .post-buttons {
+  padding: 10px;
+}
+.main .posts-container .post .post-buttons .button-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid #ced0d4;
+  padding: 10px 0;
+  border-bottom: 1px solid #ced0d4;
+}
+.main .posts-container .post .post-buttons .button-container button {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 5px;
+}
+.main .posts-container .post .post-buttons .button-container button:hover {
+  background-color: #f0f0f0;
 }
 
 /*# sourceMappingURL=style.css.map */
