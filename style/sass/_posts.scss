@@ -150,6 +150,7 @@
         width: 20%;
         height: 100%;
         border-left: 1px solid #dddfe2;
+        z-index: -1;
         .list-of-users {
             .single-user {
                 display: flex;
@@ -182,9 +183,10 @@
         }
     }
     .posts-container {
-        background-color: white;
         margin-top: 10px;
         .post {
+            background-color: white;
+            margin-top: 10px;
             .user-data {
                 display: flex;
                 position: relative;
@@ -314,6 +316,38 @@
                     }
                     button:hover {
                         background-color: #f0f0f0;
+                    }
+                }
+            }
+            .post-comment {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                img {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    padding: 10px;
+                }
+                .comment-content {
+                    background-color: #f0f2f5;
+                    flex-grow: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    padding: 10px;
+                    border-radius: 40px;
+                    margin-right: 10px;
+                    input {
+                        background-color: #f0f2f5;
+                        border: none;
+                        flex-grow: 1;
+                        outline: none;
+                    }
+                    i {
+                        margin-right: 5px;
+                        cursor: pointer;
+                        font-size: x-large;
                     }
                 }
             }

@@ -136,6 +136,7 @@ body {
                 user-select: none;
                 overflow: auto;
                 cursor: default;
+                z-index: 100;
                 //notification header
                 .notification-header {
                     // height: 600px;

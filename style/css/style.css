@@ -135,6 +135,7 @@ body {
   user-select: none;
   overflow: auto;
   cursor: default;
+  z-index: 100;
 }
 .sec-navbar .tab-container .ul .dropdown .notification-header {
   white-space: nowrap;
@@ -592,6 +593,7 @@ body {
   width: 20%;
   height: 100%;
   border-left: 1px solid #dddfe2;
+  z-index: -1;
 }
 .main .online-user .list-of-users .single-user {
   display: flex;
@@ -622,6 +624,9 @@ body {
   cursor: pointer;
 }
 .main .posts-container {
+  margin-top: 10px;
+}
+.main .posts-container .post {
   background-color: white;
   margin-top: 10px;
 }
@@ -752,6 +757,38 @@ body {
 }
 .main .posts-container .post .post-buttons .button-container button:hover {
   background-color: #f0f0f0;
+}
+.main .posts-container .post .post-comment {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main .posts-container .post .post-comment img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 10px;
+}
+.main .posts-container .post .post-comment .comment-content {
+  background-color: #f0f2f5;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+.main .posts-container .post .post-comment .comment-content input {
+  background-color: #f0f2f5;
+  border: none;
+  flex-grow: 1;
+  outline: none;
+}
+.main .posts-container .post .post-comment .comment-content i {
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: x-large;
 }
 
 /*# sourceMappingURL=style.css.map */
