@@ -596,7 +596,6 @@ body {
   width: 20%;
   height: 100%;
   border-left: 1px solid #dddfe2;
-  z-index: -1;
 }
 .main .online-user .list-of-users .single-user {
   display: flex;
