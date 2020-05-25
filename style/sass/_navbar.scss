@@ -255,6 +255,9 @@ body {
                         }
                     }
                 }
+                .single-message:hover {
+                    background-color: #e4e9f1;
+                }
                 //message-footer
                 .message-footer {
                     position: absolute;
@@ -359,7 +362,6 @@ body {
                             button {
                                 border: none;
                             }
-                            
                             button:nth-child(1) {
                                 margin-right: 5px;
                                 background-color: #4267b2;
@@ -379,7 +381,7 @@ body {
                             button:nth-child(1):hover {
                                 background-color: #4267b2db;
                             }
-                            button:nth-child(2):hover{
+                            button:nth-child(2):hover {
                                 background-color: #343a4029;
                             }
                         }

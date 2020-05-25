@@ -246,6 +246,9 @@ body {
   padding: 2px;
   border-radius: 50%;
 }
+.sec-navbar .tab-container .ul .dropdown .single-message:hover {
+  background-color: #e4e9f1;
+}
 .sec-navbar .tab-container .ul .dropdown .message-footer {
   position: absolute;
   top: 100%;
@@ -757,6 +760,35 @@ body {
 }
 .main .posts-container .post .post-buttons .button-container button:hover {
   background-color: #f0f0f0;
+}
+.main .posts-container .post .comments .single-comment {
+  padding: 0 10px;
+}
+.main .posts-container .post .comments .single-comment img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 2px;
+  margin-left: 5px;
+  vertical-align: top;
+}
+.main .posts-container .post .comments .single-comment .user-name-and-message-and-options {
+  margin-left: 5px;
+  display: inline-block;
+}
+.main .posts-container .post .comments .single-comment .user-name-and-message-and-options .user-name-and-message {
+  display: flex;
+  flex-direction: column;
+}
+.main .posts-container .post .comments .single-comment .user-name-and-message-and-options .like-reply-btn-and-time button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #65676b;
+}
+.main .posts-container .post .comments .single-comment .user-name-and-message-and-options .like-reply-btn-and-time span {
+  color: #65676b;
 }
 .main .posts-container .post .post-comment {
   display: flex;
