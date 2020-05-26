@@ -408,7 +408,17 @@ body {
             .friend-request-container::-webkit-scrollbar-thumb:hover {
                 background: rgba(136, 136, 136, 0.747);
             }
-
+            //arow tip
+            .dropdowncontain::after {
+                content: "";
+                position: absolute;
+                top: -12px;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 30px;
+                border-style: solid;
+                border-color: #555 transparent transparent transparent;
+            }
             //overflow hidden
             .messages > .dropdown {
                 overflow: hidden;

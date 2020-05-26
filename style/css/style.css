@@ -392,6 +392,16 @@ body {
 .sec-navbar .tab-container .ul .friend-request-container::-webkit-scrollbar-thumb:hover {
   background: rgba(136, 136, 136, 0.747);
 }
+.sec-navbar .tab-container .ul .dropdowncontain::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 30px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
 .sec-navbar .tab-container .ul .messages > .dropdown {
   overflow: hidden;
 }
