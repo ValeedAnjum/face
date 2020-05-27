@@ -833,4 +833,32 @@ body {
   font-size: x-large;
 }
 
+@media screen and (max-width: 900px) {
+  .main .online-user {
+    display: none;
+  }
+  .main .user-navbar {
+    display: none;
+  }
+  .main .user-posts {
+    width: 100%;
+    margin-left: auto;
+  }
+
+  .sec-navbar .search-bar {
+    display: none;
+  }
+  .sec-navbar .tabs {
+    justify-content: flex-end;
+  }
+  .sec-navbar .tab-container .ul .tab:nth-of-type(1),
+.sec-navbar .tab-container .ul .tab:nth-of-type(2),
+.sec-navbar .tab-container .ul .tab:nth-of-type(3) {
+    display: none;
+  }
+  .sec-navbar .tab-container {
+    justify-content: flex-end;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
