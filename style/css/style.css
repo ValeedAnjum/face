@@ -459,6 +459,9 @@ body {
   background-color: #e4e9f1;
 }
 
+.main .not-fully-responsive {
+  display: none;
+}
 .main .user-navbar-posts {
   padding: 10px;
   margin-top: 50px;
@@ -847,6 +850,21 @@ body {
     width: 100%;
     margin-left: auto;
   }
+  .main .not-fully-responsive {
+    display: block;
+  }
+  .main .posts-container .post .post-comment .comment-content {
+    flex-grow: 0;
+    margin-right: 0;
+    padding: 10px 3px;
+  }
+  .main .posts-container .post .post-comment .comment-content input {
+    padding-left: 5px;
+    flex-grow: 0;
+  }
+  .main .posts-container .post .post-comment .comment-content i {
+    font-size: 1em;
+  }
 
   .sec-navbar .search-bar {
     display: none;
@@ -864,6 +882,11 @@ body {
   }
   .sec-navbar .tab-container .ul .dropdown {
     left: -40px;
+  }
+  .sec-navbar .friend-requests:hover .dropdown,
+.sec-navbar .messages:hover .dropdown,
+.sec-navbar .notification:hover .dropdown {
+    display: none !important;
   }
 }
 

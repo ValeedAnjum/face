@@ -11,6 +11,21 @@
             width: 100%;
             margin-left: auto;
         }
+        .not-fully-responsive {
+            display: block;
+        }
+        .posts-container .post .post-comment .comment-content {
+            flex-grow: 0;
+            margin-right: 0;
+            padding: 10px 3px;
+            input {
+                padding-left: 5px;
+                flex-grow: 0;
+            }
+            i {
+                font-size: 1em;
+            }
+        }
     }
     .sec-navbar {
         .search-bar {
@@ -29,6 +44,11 @@
         }
         .tab-container .ul .dropdown {
             left: -40px;
+        }
+        .friend-requests:hover .dropdown,
+        .messages:hover .dropdown,
+        .notification:hover .dropdown {
+            display: none !important;
         }
     }
 }
