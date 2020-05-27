@@ -834,6 +834,9 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+  .main {
+    overflow: hidden;
+  }
   .main .online-user {
     display: none;
   }
