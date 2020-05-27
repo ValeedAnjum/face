@@ -853,14 +853,14 @@ body {
   .main .not-fully-responsive {
     display: block;
   }
+  .main .posts-container .post .post-comment {
+    flex-wrap: wrap;
+  }
   .main .posts-container .post .post-comment .comment-content {
-    flex-grow: 0;
-    margin-right: 0;
     padding: 10px 3px;
   }
   .main .posts-container .post .post-comment .comment-content input {
     padding-left: 5px;
-    flex-grow: 0;
   }
   .main .posts-container .post .post-comment .comment-content i {
     font-size: 1em;
@@ -887,6 +887,14 @@ body {
 .sec-navbar .messages:hover .dropdown,
 .sec-navbar .notification:hover .dropdown {
     display: none !important;
+  }
+}
+@media screen and (max-width: 367px) {
+  .main .posts-container .post .post-comment img {
+    display: none;
+  }
+  .main .posts-container .post .post-comment .comment-conten {
+    margin: 5px;
   }
 }
 
