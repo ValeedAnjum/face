@@ -862,6 +862,9 @@ body {
   .sec-navbar .tab-container {
     justify-content: flex-end;
   }
+  .sec-navbar .tab-container .ul .dropdown {
+    left: -40px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

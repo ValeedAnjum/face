@@ -27,5 +27,8 @@
         .tab-container {
             justify-content: flex-end;
         }
+        .tab-container .ul .dropdown {
+            left: -40px;
+        }
     }
 }
