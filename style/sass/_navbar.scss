@@ -350,10 +350,12 @@ body {
                             height: 48px;
                             border-radius: 50%;
                             overflow: hidden;
-                            margin-right: 12px;
                             img {
                                 width: 100%;
                             }
+                        }
+                        .user-name-and-mutual {
+                            padding-left: 6px;
                         }
                         .button-container {
                             display: flex;
@@ -455,7 +457,6 @@ body {
             .notifictaion-user-image {
                 display: block;
                 height: 48px;
-                margin-right: 12px;
                 width: 48px;
                 border-radius: 50%;
                 overflow: hidden;
@@ -465,6 +466,7 @@ body {
                 }
             }
             .single-notification .notification-text {
+                padding-left: 6px;
                 p {
                     font-size: smaller;
                     color: #1d2129;

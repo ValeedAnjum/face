@@ -340,10 +340,12 @@ body {
   height: 48px;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 12px;
 }
 .sec-navbar .tab-container .ul .dropdown .friend-request-container .single-friend-request .user-image img {
   width: 100%;
+}
+.sec-navbar .tab-container .ul .dropdown .friend-request-container .single-friend-request .user-name-and-mutual {
+  padding-left: 6px;
 }
 .sec-navbar .tab-container .ul .dropdown .friend-request-container .single-friend-request .button-container {
   display: flex;
@@ -434,7 +436,6 @@ body {
 .sec-navbar .tab-container .ul .notifictaion-user-image {
   display: block;
   height: 48px;
-  margin-right: 12px;
   width: 48px;
   border-radius: 50%;
   overflow: hidden;
@@ -442,6 +443,9 @@ body {
 .sec-navbar .tab-container .ul .notifictaion-user-image img {
   width: 100%;
   height: 100%;
+}
+.sec-navbar .tab-container .ul .single-notification .notification-text {
+  padding-left: 6px;
 }
 .sec-navbar .tab-container .ul .single-notification .notification-text p {
   font-size: smaller;
@@ -896,6 +900,110 @@ body {
   .main .posts-container .post .post-comment .comment-conten {
     margin: 5px;
   }
+}
+.login-navbar {
+  background-color: #3f5c9a;
+  color: white;
+}
+.login-navbar .logo-login-form {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding: 17px;
+}
+.login-navbar .login-form {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.login-navbar .email,
+.login-navbar .password {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.login-navbar .email label,
+.login-navbar .password label {
+  margin-bottom: 0;
+}
+.login-navbar .email input,
+.login-navbar .password input {
+  outline: none;
+  height: 25px;
+  padding-left: 2px;
+}
+.login-navbar .btn-container {
+  display: flex;
+  align-items: flex-end;
+}
+.login-navbar .btn-container button {
+  outline: none;
+  border: 1px solid #00000047;
+  padding: 0px 4px;
+  background-color: #4267b2;
+  color: white;
+  font-weight: 400;
+  height: 25px;
+}
+
+.users-signup-form .content-conatiner {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+}
+.users-signup-form .content-conatiner .column-1 {
+  width: 50%;
+}
+.users-signup-form .content-conatiner .column-1 h2 {
+  font-size: large;
+}
+.users-signup-form .content-conatiner .column-1 img {
+  width: 100%;
+}
+.users-signup-form .content-conatiner .column-2 {
+  width: 50%;
+}
+.users-signup-form .content-conatiner .column-2 span {
+  font-size: large;
+  font-weight: 500;
+}
+.users-signup-form .content-conatiner .column-2 .signup-form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.users-signup-form .content-conatiner .column-2 .signup-form > div {
+  margin-bottom: 10px;
+}
+.users-signup-form .content-conatiner .column-2 .signup-form > div input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #bdc7d8;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+.users-signup-form .content-conatiner .column-2 .signup-form .first-and-sirname {
+  display: flex;
+}
+.users-signup-form .content-conatiner .column-2 .signup-form .first-and-sirname input {
+  flex-grow: 1;
+}
+.users-signup-form .content-conatiner .column-2 .signup-form .first-and-sirname input:nth-child(1) {
+  margin-right: 10px;
+}
+.users-signup-form .content-conatiner .column-2 .signup-btn button {
+  outline: none;
+  border: 1px solid #8c7474;
+  background-color: #5d964a;
+  padding: 8px 40px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+}
+
+.not-responsive {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

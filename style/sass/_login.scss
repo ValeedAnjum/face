@@ -1,0 +1,104 @@
+.login-navbar {
+    background-color: #3f5c9a;
+    color: white;
+    .logo-login-form {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        padding: 17px;
+    }
+    .login-form {
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .email,
+    .password {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        label {
+            margin-bottom: 0;
+        }
+        input {
+            outline: none;
+            height: 25px;
+            padding-left: 2px;
+        }
+    }
+    .btn-container {
+        display: flex;
+        align-items: flex-end;
+        button {
+            outline: none;
+            border: 1px solid #00000047;
+            padding: 0px 4px;
+            background-color: #4267b2;
+            color: white;
+            font-weight: 400;
+            height: 25px;
+        }
+    }
+}
+.users-signup-form {
+    .content-conatiner {
+        width: 80%;
+        margin: auto;
+        padding: 10px;
+        display: flex;
+        .column-1 {
+            width: 50%;
+            h2 {
+                font-size: large;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        .column-2 {
+            width: 50%;
+            span {
+                font-size: large;
+                font-weight: 500;
+            }
+            .signup-form {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                > div {
+                    margin-bottom: 10px;
+                    input {
+                        width: 100%;
+                        outline: none;
+                        border: 1px solid #bdc7d8;
+                        padding: 5px 10px;
+                        border-radius: 8px;
+                    }
+                }
+                .first-and-sirname {
+                    display: flex;
+                    input {
+                        flex-grow: 1;
+                    }
+                    input:nth-child(1) {
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .signup-btn {
+                button {
+                    outline: none;
+                    border: 1px solid #8c7474;
+                    background-color: #5d964a;
+                    padding: 8px 40px;
+                    border-radius: 5px;
+                    color: white;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+.not-responsive {
+    display: none;
+}
